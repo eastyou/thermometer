@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>温度计练习</title>
+<style>@page { size: A4; margin: 12mm; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+       color: #1f2933; background: #fff; }
+.sheet { padding: 4mm; }
+h1 { margin: 0 0 2mm; font-size: 22px; text-align: center; letter-spacing: 2px; }
+.meta { margin: 0 0 5mm; text-align: center; color: #616e7c; font-size: 12px; }
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4mm; }
+.card { border: 1px solid #cbd2d9; border-radius: 3mm; padding: 3mm; page-break-inside: avoid; }
+.prompt { font-size: 13px; margin: 0 0 2mm; color: #323f4b; }
+.answer-line { margin-top: 2mm; border-bottom: 1px dashed #9aa5b1; height: 22px; }
+.answers { page-break-before: always; margin-top: 6mm; }
+.answers h2 { font-size: 18px; border-left: 4px solid #b02a37; padding-left: 3mm; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th, td { border: 1px solid #cbd2d9; padding: 2mm 3mm; text-align: left; }
+th { background: #f5f7fa; }
+@media print { .sheet { padding: 0; } }</style></head><body>
+<main class="sheet">
+<h1>温度计练习</h1>
+<p class="meta">姓名：__________　班级：__________　日期：__________</p>
+<section class="grid">
+<div class="card">
+<p class="prompt">1. 温度从 40°C 变到 -11°C，变化了多少？</p>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 465" width="150" height="465" role="img" aria-label="温度计">
+<title>温度计</title>
+<rect x="66.75" y="37.2" width="25.5" height="336.15" rx="12.75" fill="#f8fafc" stroke="#323f4b" stroke-width="1.8"/>
+<circle cx="79.5" cy="381.38" r="25.5" fill="#f8fafc" stroke="#323f4b" stroke-width="1.8"/>
+<circle cx="79.5" cy="381.38" r="18.36" fill="#d64545" stroke="#a61b1b"/>
+<rect x="71.85" y="288.94" width="15.3" height="84.41" rx="7.65" fill="#d64545"/>
+<g stroke="#52606d" stroke-linecap="round">
+<line x1="66.75" y1="367.35" x2="47.25" y2="367.35" stroke-width="1.1"/>
+<line x1="66.75" y1="363.22" x2="59.25" y2="363.22" stroke-width="0.5"/>
+<line x1="66.75" y1="359.1" x2="59.25" y2="359.1" stroke-width="0.5"/>
+<line x1="66.75" y1="354.97" x2="59.25" y2="354.97" stroke-width="0.5"/>
+<line x1="66.75" y1="350.84" x2="59.25" y2="350.84" stroke-width="0.5"/>
+<line x1="66.75" y1="346.72" x2="53.25" y2="346.72" stroke-width="0.8"/>
+<line x1="66.75" y1="342.59" x2="59.25" y2="342.59" stroke-width="0.5"/>
+<line x1="66.75" y1="338.46" x2="59.25" y2="338.46" stroke-width="0.5"/>
+<line x1="66.75" y1="334.34" x2="59.25" y2="334.34" stroke-width="0.5"/>
+<line x1="66.75" y1="330.21" x2="59.25" y2="330.21" stroke-width="0.5"/>
+<line x1="66.75" y1="326.08" x2="47.25" y2="326.08" stroke-width="1.1"/>
+<line x1="66.75" y1="321.95" x2="59.25" y2="321.95" stroke-width="0.5"/>
+<line x1="66.75" y1="317.83" x2="59.25" y2="317.83" stroke-width="0.5"/>
+<line x1="66.75" y1="313.7" x2="59.25" y2="313.7" stroke-width="0.5"/>
+<line x1="66.75" y1="309.57" x2="59.25" y2="309.57" stroke-width="0.5"/>
+<line x1="66.75" y1="305.45" x2="53.25" y2="305.45" stroke-width="0.8"/>
+<line x1="66.75" y1="301.32" x2="59.25" y2="301.32" stroke-width="0.5"/>
+<line x1="66.75" y1="297.19" x2="59.25" y2="297.19" stroke-width="0.5"/>
+<line x1="66.75" y1="293.07" x2="59.25" y2="293.07" stroke-width="0.5"/>
+<line x1="66.75" y1="288.94" x2="59.25" y2="288.94" stroke-width="0.5"/>
+<line x1="66.75" y1="284.81" x2="47.25" y2="284.81" stroke-width="1.1"/>
+<line x1="66.75" y1="280.69" x2="59.25" y2="280.69" stroke-width="0.5"/>
+<line x1="66.75" y1="276.56" x2="59.25" y2="276.56" stroke-width="0.5"/>
+<line x1="66.75" y1="272.43" x2="59.25" y2="272.43" stroke-width="0.5"/>
+<line x1="66.75" y1="268.31" x2="59.25" y2="268.31" stroke-width="0.5"/>
+<line x1="66.75" y1="264.18" x2="53.25" y2="264.18" stroke-width="0.8"/>
+<line x1="66.75" y1="260.05" x2="59.25" y2="260.05" stroke-width="0.5"/>
+<line x1="66.75" y1="255.92" x2="59.25" y2="255.92" stroke-width="0.5"/>
+<line x1="66.75" y1="251.8" x2="59.25" y2="251.8" stroke-width="0.5"/>
+<line x1="66.75" y1="247.67" x2="59.25" y2="247.67" stroke-width="0.5"/>
+<line x1="66.75" y1="243.54" x2="47.25" y2="243.54" stroke-width="1.1"/>
+<line x1="66.75" y1="239.42" x2="59.25" y2="239.42" stroke-width="0.5"/>
+<line x1="66.75" y1="235.29" x2="59.25" y2="235.29" stroke-width="0.5"/>
+<line x1="66.75" y1="231.16" x2="59.25" y2="231.16" stroke-width="0.5"/>
+<line x1="66.75" y1="227.04" x2="59.25" y2="227.04" stroke-width="0.5"/>
+<line x1="66.75" y1="222.91" x2="53.25" y2="222.91" stroke-width="0.8"/>
+<line x1="66.75" y1="218.78" x2="59.25" y2="218.78" stroke-width="0.5"/>
+<line x1="66.75" y1="214.66" x2="59.25" y2="214.66" stroke-width="0.5"/>
+<line x1="66.75" y1="210.53" x2="59.25" y2="210.53" stroke-width="0.5"/>
+<line x1="66.75" y1="206.4" x2="59.25" y2="206.4" stroke-width="0.5"/>
+<line x1="66.75" y1="202.28" x2="47.25" y2="202.28" stroke-width="1.1"/>
+<line x1="66.75" y1="198.15" x2="59.25" y2="198.15" stroke-width="0.5"/>
+<line x1="66.75" y1="194.02" x2="59.25" y2="194.02" stroke-width="0.5"/>
+<line x1="66.75" y1="189.89" x2="59.25" y2="189.89" stroke-width="0.5"/>
+<line x1="66.75" y1="185.77" x2="59.25" y2="185.77" stroke-width="0.5"/>
+<line x1="66.75" y1="181.64" x2="53.25" y2="181.64" stroke-width="0.8"/>
+<line x1="66.75" y1="177.51" x2="59.25" y2="177.51" stroke-width="0.5"/>
+<line x1="66.75" y1="173.39" x2="59.25" y2="173.39" stroke-width="0.5"/>
+<line x1="66.75" y1="169.26" x2="59.25" y2="169.26" stroke-width="0.5"/>
+<line x1="66.75" y1="165.13" x2="59.25" y2="165.13" stroke-width="0.5"/>
+<line x1="66.75" y1="161.01" x2="47.25" y2="161.01" stroke-width="1.1"/>
+<line x1="66.75" y1="156.88" x2="59.25" y2="156.88" stroke-width="0.5"/>
+<line x1="66.75" y1="152.75" x2="59.25" y2="152.75" stroke-width="0.5"/>
+<line x1="66.75" y1="148.63" x2="59.25" y2="148.63" stroke-width="0.5"/>
+<line x1="66.75" y1="144.5" x2="59.25" y2="144.5" stroke-width="0.5"/>
+<line x1="66.75" y1="140.37" x2="53.25" y2="140.37" stroke-width="0.8"/>
+<line x1="66.75" y1="136.25" x2="59.25" y2="136.25" stroke-width="0.5"/>
+<line x1="66.75" y1="132.12" x2="59.25" y2="132.12" stroke-width="0.5"/>
+<line x1="66.75" y1="127.99" x2="59.25" y2="127.99" stroke-width="0.5"/>
+<line x1="66.75" y1="123.86" x2="59.25" y2="123.86" stroke-width="0.5"/>
+<line x1="66.75" y1="119.74" x2="47.25" y2="119.74" stroke-width="1.1"/>
+<line x1="66.75" y1="115.61" x2="59.25" y2="115.61" stroke-width="0.5"/>
+<line x1="66.75" y1="111.48" x2="59.25" y2="111.48" stroke-width="0.5"/>
+<line x1="66.75" y1="107.36" x2="59.25" y2="107.36" stroke-width="0.5"/>
+<line x1="66.75" y1="103.23" x2="59.25" y2="103.23" stroke-width="0.5"/>
+<line x1="66.75" y1="99.1" x2="53.25" y2="99.1" stroke-width="0.8"/>
+<line x1="66.75" y1="94.98" x2="59.25" y2="94.98" stroke-width="0.5"/>
+<line x1="66.75" y1="90.85" x2="59.25" y2="90.85" stroke-width="0.5"/>
+<line x1="66.75" y1="86.72" x2="59.25" y2="86.72" stroke-width="0.5"/>
+<line x1="66.75" y1="82.6" x2="59.25" y2="82.6" stroke-width="0.5"/>
+<line x1="66.75" y1="78.47" x2="47.25" y2="78.47" stroke-width="1.1"/>
+<line x1="66.75" y1="74.34" x2="59.25" y2="74.34" stroke-width="0.5"/>
+<line x1="66.75" y1="70.21" x2="59.25" y2="70.21" stroke-width="0.5"/>
+<line x1="66.75" y1="66.09" x2="59.25" y2="66.09" stroke-width="0.5"/>
+<line x1="66.75" y1="61.96" x2="59.25" y2="61.96" stroke-width="0.5"/>
+<line x1="66.75" y1="57.83" x2="53.25" y2="57.83" stroke-width="0.8"/>
+<line x1="66.75" y1="53.71" x2="59.25" y2="53.71" stroke-width="0.5"/>
+<line x1="66.75" y1="49.58" x2="59.25" y2="49.58" stroke-width="0.5"/>
+<line x1="66.75" y1="45.45" x2="59.25" y2="45.45" stroke-width="0.5"/>
+<line x1="66.75" y1="41.33" x2="59.25" y2="41.33" stroke-width="0.5"/>
+<line x1="66.75" y1="37.2" x2="47.25" y2="37.2" stroke-width="1.1"/>
+</g>
+<g font-size="12.75" fill="#3e4c59" text-anchor="end">
+<text x="41.25" y="371.85">-30</text>
+<text x="41.25" y="330.58">-20</text>
+<text x="41.25" y="289.31">-10</text>
+<text x="41.25" y="248.04">0</text>
+<text x="41.25" y="206.78">10</text>
+<text x="41.25" y="165.51">20</text>
+<text x="41.25" y="124.24">30</text>
+<text x="41.25" y="82.97">40</text>
+<text x="41.25" y="41.7">50</text>
+</g>
+</svg>
+<div class="answer-line"></div>
+</div>
+<div class="card">
+<p class="prompt">2. 温度从 21°C 变到 -17°C，变化了多少？</p>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 465" width="150" height="465" role="img" aria-label="温度计">
+<title>温度计</title>
+<rect x="66.75" y="37.2" width="25.5" height="336.15" rx="12.75" fill="#f8fafc" stroke="#323f4b" stroke-width="1.8"/>
+<circle cx="79.5" cy="381.38" r="25.5" fill="#f8fafc" stroke="#323f4b" stroke-width="1.8"/>
+<circle cx="79.5" cy="381.38" r="18.36" fill="#d64545" stroke="#a61b1b"/>
+<rect x="71.85" y="313.7" width="15.3" height="59.65" rx="7.65" fill="#d64545"/>
+<g stroke="#52606d" stroke-linecap="round">
+<line x1="66.75" y1="367.35" x2="47.25" y2="367.35" stroke-width="1.1"/>
+<line x1="66.75" y1="363.22" x2="59.25" y2="363.22" stroke-width="0.5"/>
+<line x1="66.75" y1="359.1" x2="59.25" y2="359.1" stroke-width="0.5"/>
+<line x1="66.75" y1="354.97" x2="59.25" y2="354.97" stroke-width="0.5"/>
+<line x1="66.75" y1="350.84" x2="59.25" y2="350.84" stroke-width="0.5"/>
+<line x1="66.75" y1="346.72" x2="53.25" y2="346.72" stroke-width="0.8"/>
+<line x1="66.75" y1="342.59" x2="59.25" y2="342.59" stroke-width="0.5"/>
+<line x1="66.75" y1="338.46" x2="59.25" y2="338.46" stroke-width="0.5"/>
+<line x1="66.75" y1="334.34" x2="59.25" y2="334.34" stroke-width="0.5"/>
+<line x1="66.75" y1="330.21" x2="59.25" y2="330.21" stroke-width="0.5"/>
+<line x1="66.75" y1="326.08" x2="47.25" y2="326.08" stroke-width="1.1"/>
+<line x1="66.75" y1="321.95" x2="59.25" y2="321.95" stroke-width="0.5"/>
+<line x1="66.75" y1="317.83" x2="59.25" y2="317.83" stroke-width="0.5"/>
+<line x1="66.75" y1="313.7" x2="59.25" y2="313.7" stroke-width="0.5"/>
+<line x1="66.75" y1="309.57" x2="59.25" y2="309.57" stroke-width="0.5"/>
+<line x1="66.75" y1="305.45" x2="53.25" y2="305.45" stroke-width="0.8"/>
+<line x1="66.75" y1="301.32" x2="59.25" y2="301.32" stroke-width="0.5"/>
+<line x1="66.75" y1="297.19" x2="59.25" y2="297.19" stroke-width="0.5"/>
+<line x1="66.75" y1="293.07" x2="59.25" y2="293.07" stroke-width="0.5"/>
+<line x1="66.75" y1="288.94" x2="59.25" y2="288.94" stroke-width="0.5"/>
+<line x1="66.75" y1="284.81" x2="47.25" y2="284.81" stroke-width="1.1"/>
+<line x1="66.75" y1="280.69" x2="59.25" y2="280.69" stroke-width="0.5"/>
+<line x1="66.75" y1="276.56" x2="59.25" y2="276.56" stroke-width="0.5"/>
+<line x1="66.75" y1="272.43" x2="59.25" y2="272.43" stroke-width="0.5"/>
+<line x1="66.75" y1="268.31" x2="59.25" y2="268.31" stroke-width="0.5"/>
+<line x1="66.75" y1="264.18" x2="53.25" y2="264.18" stroke-width="0.8"/>
+<line x1="66.75" y1="260.05" x2="59.25" y2="260.05" stroke-width="0.5"/>
+<line x1="66.75" y1="255.92" x2="59.25" y2="255.92" stroke-width="0.5"/>
+<line x1="66.75" y1="251.8" x2="59.25" y2="251.8" stroke-width="0.5"/>
+<line x1="66.75" y1="247.67" x2="59.25" y2="247.67" stroke-width="0.5"/>
+<line x1="66.75" y1="243.54" x2="47.25" y2="243.54" stroke-width="1.1"/>
+<line x1="66.75" y1="239.42" x2="59.25" y2="239.42" stroke-width="0.5"/>
+<line x1="66.75" y1="235.29" x2="59.25" y2="235.29" stroke-width="0.5"/>
+<line x1="66.75" y1="231.16" x2="59.25" y2="231.16" stroke-width="0.5"/>
+<line x1="66.75" y1="227.04" x2="59.25" y2="227.04" stroke-width="0.5"/>
+<line x1="66.75" y1="222.91" x2="53.25" y2="222.91" stroke-width="0.8"/>
+<line x1="66.75" y1="218.78" x2="59.25" y2="218.78" stroke-width="0.5"/>
+<line x1="66.75" y1="214.66" x2="59.25" y2="214.66" stroke-width="0.5"/>
+<line x1="66.75" y1="210.53" x2="59.25" y2="210.53" stroke-width="0.5"/>
+<line x1="66.75" y1="206.4" x2="59.25" y2="206.4" stroke-width="0.5"/>
+<line x1="66.75" y1="202.28" x2="47.25" y2="202.28" stroke-width="1.1"/>
+<line x1="66.75" y1="198.15" x2="59.25" y2="198.15" stroke-width="0.5"/>
+<line x1="66.75" y1="194.02" x2="59.25" y2="194.02" stroke-width="0.5"/>
+<line x1="66.75" y1="189.89" x2="59.25" y2="189.89" stroke-width="0.5"/>
+<line x1="66.75" y1="185.77" x2="59.25" y2="185.77" stroke-width="0.5"/>
+<line x1="66.75" y1="181.64" x2="53.25" y2="181.64" stroke-width="0.8"/>
+<line x1="66.75" y1="177.51" x2="59.25" y2="177.51" stroke-width="0.5"/>
+<line x1="66.75" y1="173.39" x2="59.25" y2="173.39" stroke-width="0.5"/>
+<line x1="66.75" y1="169.26" x2="59.25" y2="169.26" stroke-width="0.5"/>
+<line x1="66.75" y1="165.13" x2="59.25" y2="165.13" stroke-width="0.5"/>
+<line x1="66.75" y1="161.01" x2="47.25" y2="161.01" stroke-width="1.1"/>
+<line x1="66.75" y1="156.88" x2="59.25" y2="156.88" stroke-width="0.5"/>
+<line x1="66.75" y1="152.75" x2="59.25" y2="152.75" stroke-width="0.5"/>
+<line x1="66.75" y1="148.63" x2="59.25" y2="148.63" stroke-width="0.5"/>
+<line x1="66.75" y1="144.5" x2="59.25" y2="144.5" stroke-width="0.5"/>
+<line x1="66.75" y1="140.37" x2="53.25" y2="140.37" stroke-width="0.8"/>
+<line x1="66.75" y1="136.25" x2="59.25" y2="136.25" stroke-width="0.5"/>
+<line x1="66.75" y1="132.12" x2="59.25" y2="132.12" stroke-width="0.5"/>
+<line x1="66.75" y1="127.99" x2="59.25" y2="127.99" stroke-width="0.5"/>
+<line x1="66.75" y1="123.86" x2="59.25" y2="123.86" stroke-width="0.5"/>
+<line x1="66.75" y1="119.74" x2="47.25" y2="119.74" stroke-width="1.1"/>
+<line x1="66.75" y1="115.61" x2="59.25" y2="115.61" stroke-width="0.5"/>
+<line x1="66.75" y1="111.48" x2="59.25" y2="111.48" stroke-width="0.5"/>
+<line x1="66.75" y1="107.36" x2="59.25" y2="107.36" stroke-width="0.5"/>
+<line x1="66.75" y1="103.23" x2="59.25" y2="103.23" stroke-width="0.5"/>
+<line x1="66.75" y1="99.1" x2="53.25" y2="99.1" stroke-width="0.8"/>
+<line x1="66.75" y1="94.98" x2="59.25" y2="94.98" stroke-width="0.5"/>
+<line x1="66.75" y1="90.85" x2="59.25" y2="90.85" stroke-width="0.5"/>
+<line x1="66.75" y1="86.72" x2="59.25" y2="86.72" stroke-width="0.5"/>
+<line x1="66.75" y1="82.6" x2="59.25" y2="82.6" stroke-width="0.5"/>
+<line x1="66.75" y1="78.47" x2="47.25" y2="78.47" stroke-width="1.1"/>
+<line x1="66.75" y1="74.34" x2="59.25" y2="74.34" stroke-width="0.5"/>
+<line x1="66.75" y1="70.21" x2="59.25" y2="70.21" stroke-width="0.5"/>
+<line x1="66.75" y1="66.09" x2="59.25" y2="66.09" stroke-width="0.5"/>
+<line x1="66.75" y1="61.96" x2="59.25" y2="61.96" stroke-width="0.5"/>
+<line x1="66.75" y1="57.83" x2="53.25" y2="57.83" stroke-width="0.8"/>
+<line x1="66.75" y1="53.71" x2="59.25" y2="53.71" stroke-width="0.5"/>
+<line x1="66.75" y1="49.58" x2="59.25" y2="49.58" stroke-width="0.5"/>
+<line x1="66.75" y1="45.45" x2="59.25" y2="45.45" stroke-width="0.5"/>
+<line x1="66.75" y1="41.33" x2="59.25" y2="41.33" stroke-width="0.5"/>
+<line x1="66.75" y1="37.2" x2="47.25" y2="37.2" stroke-width="1.1"/>
+</g>
+<g font-size="12.75" fill="#3e4c59" text-anchor="end">
+<text x="41.25" y="371.85">-30</text>
+<text x="41.25" y="330.58">-20</text>
+<text x="41.25" y="289.31">-10</text>
+<text x="41.25" y="248.04">0</text>
+<text x="41.25" y="206.78">10</text>
+<text x="41.25" y="165.51">20</text>
+<text x="41.25" y="124.24">30</text>
+<text x="41.25" y="82.97">40</text>
+<text x="41.25" y="41.7">50</text>
+</g>
+</svg>
+<div class="answer-line"></div>
+</div>
+<div class="card">
+<p class="prompt">3. 读出温度计上的温度</p>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 465" width="150" height="465" role="img" aria-label="温度计">
+<title>温度计</title>
+<rect x="66.75" y="37.2" width="25.5" height="336.15" rx="12.75" fill="#f8fafc" stroke="#323f4b" stroke-width="1.8"/>
+<circle cx="79.5" cy="381.38" r="25.5" fill="#f8fafc" stroke="#323f4b" stroke-width="1.8"/>
+<circle cx="79.5" cy="381.38" r="18.36" fill="#d64545" stroke="#a61b1b"/>
+<rect x="71.85" y="243.54" width="15.3" height="129.81" rx="7.65" fill="#d64545"/>
+<g stroke="#52606d" stroke-linecap="round">
+<line x1="66.75" y1="367.35" x2="47.25" y2="367.35" stroke-width="1.1"/>
+<line x1="66.75" y1="363.22" x2="59.25" y2="363.22" stroke-width="0.5"/>
+<line x1="66.75" y1="359.1" x2="59.25" y2="359.1" stroke-width="0.5"/>
+<line x1="66.75" y1="354.97" x2="59.25" y2="354.97" stroke-width="0.5"/>
+<line x1="66.75" y1="350.84" x2="59.25" y2="350.84" stroke-width="0.5"/>
+<line x1="66.75" y1="346.72" x2="53.25" y2="346.72" stroke-width="0.8"/>
+<line x1="66.75" y1="342.59" x2="59.25" y2="342.59" stroke-width="0.5"/>
+<line x1="66.75" y1="338.46" x2="59.25" y2="338.46" stroke-width="0.5"/>
+<line x1="66.75" y1="334.34" x2="59.25" y2="334.34" stroke-width="0.5"/>
+<line x1="66.75" y1="330.21" x2="59.25" y2="330.21" stroke-width="0.5"/>
+<line x1="66.75" y1="326.08" x2="47.25" y2="326.08" stroke-width="1.1"/>
+<line x1="66.75" y1="321.95" x2="59.25" y2="321.95" stroke-width="0.5"/>
+<line x1="66.75" y1="317.83" x2="59.25" y2="317.83" stroke-width="0.5"/>
+<line x1="66.75" y1="313.7" x2="59.25" y2="313.7" stroke-width="0.5"/>
+<line x1="66.75" y1="309.57" x2="59.25" y2="309.57" stroke-width="0.5"/>
+<line x1="66.75" y1="305.45" x2="53.25" y2="305.45" stroke-width="0.8"/>
+<line x1="66.75" y1="301.32" x2="59.25" y2="301.32" stroke-width="0.5"/>
+<line x1="66.75" y1="297.19" x2="59.25" y2="297.19" stroke-width="0.5"/>
+<line x1="66.75" y1="293.07" x2="59.25" y2="293.07" stroke-width="0.5"/>
+<line x1="66.75" y1="288.94" x2="59.25" y2="288.94" stroke-width="0.5"/>
+<line x1="66.75" y1="284.81" x2="47.25" y2="284.81" stroke-width="1.1"/>
+<line x1="66.75" y1="280.69" x2="59.25" y2="280.69" stroke-width="0.5"/>
+<line x1="66.75" y1="276.56" x2="59.25" y2="276.56" stroke-width="0.5"/>
+<line x1="66.75" y1="272.43" x2="59.25" y2="272.43" stroke-width="0.5"/>
+<line x1="66.75" y1="268.31" x2="59.25" y2="268.31" stroke-width="0.5"/>
+<line x1="66.75" y1="264.18" x2="53.25" y2="264.18" stroke-width="0.8"/>
+<line x1="66.75" y1="260.05" x2="59.25" y2="260.05" stroke-width="0.5"/>
+<line x1="66.75" y1="255.92" x2="59.25" y2="255.92" stroke-width="0.5"/>
+<line x1="66.75" y1="251.8" x2="59.25" y2="251.8" stroke-width="0.5"/>
+<line x1="66.75" y1="247.67" x2="59.25" y2="247.67" stroke-width="0.5"/>
+<line x1="66.75" y1="243.54" x2="47.25" y2="243.54" stroke-width="1.1"/>
+<line x1="66.75" y1="239.42" x2="59.25" y2="239.42" stroke-width="0.5"/>
+<line x1="66.75" y1="235.29" x2="59.25" y2="235.29" stroke-width="0.5"/>
+<line x1="66.75" y1="231.16" x2="59.25" y2="231.16" stroke-width="0.5"/>
+<line x1="66.75" y1="227.04" x2="59.25" y2="227.04" stroke-width="0.5"/>
+<line x1="66.75" y1="222.91" x2="53.25" y2="222.91" stroke-width="0.8"/>
+<line x1="66.75" y1="218.78" x2="59.25" y2="218.78" stroke-width="0.5"/>
+<line x1="66.75" y1="214.66" x2="59.25" y2="214.66" stroke-width="0.5"/>
+<line x1="66.75" y1="210.53" x2="59.25" y2="210.53" stroke-width="0.5"/>
+<line x1="66.75" y1="206.4" x2="59.25" y2="206.4" stroke-width="0.5"/>
+<line x1="66.75" y1="202.28" x2="47.25" y2="202.28" stroke-width="1.1"/>
+<line x1="66.75" y1="198.15" x2="59.25" y2="198.15" stroke-width="0.5"/>
+<line x1="66.75" y1="194.02" x2="59.25" y2="194.02" stroke-width="0.5"/>
+<line x1="66.75" y1="189.89" x2="59.25" y2="189.89" stroke-width="0.5"/>
+<line x1="66.75" y1="185.77" x2="59.25" y2="185.77" stroke-width="0.5"/>
+<line x1="66.75" y1="181.64" x2="53.25" y2="181.64" stroke-width="0.8"/>
+<line x1="66.75" y1="177.51" x2="59.25" y2="177.51" stroke-width="0.5"/>
+<line x1="66.75" y1="173.39" x2="59.25" y2="173.39" stroke-width="0.5"/>
+<line x1="66.75" y1="169.26" x2="59.25" y2="169.26" stroke-width="0.5"/>
+<line x1="66.75" y1="165.13" x2="59.25" y2="165.13" stroke-width="0.5"/>
+<line x1="66.75" y1="161.01" x2="47.25" y2="161.01" stroke-width="1.1"/>
+<line x1="66.75" y1="156.88" x2="59.25" y2="156.88" stroke-width="0.5"/>
+<line x1="66.75" y1="152.75" x2="59.25" y2="152.75" stroke-width="0.5"/>
+<line x1="66.75" y1="148.63" x2="59.25" y2="148.63" stroke-width="0.5"/>
+<line x1="66.75" y1="144.5" x2="59.25" y2="144.5" stroke-width="0.5"/>
+<line x1="66.75" y1="140.37" x2="53.25" y2="140.37" stroke-width="0.8"/>
+<line x1="66.75" y1="136.25" x2="59.25" y2="136.25" stroke-width="0.5"/>
+<line x1="66.75" y1="132.12" x2="59.25" y2="132.12" stroke-width="0.5"/>
+<line x1="66.75" y1="127.99" x2="59.25" y2="127.99" stroke-width="0.5"/>
+<line x1="66.75" y1="123.86" x2="59.25" y2="123.86" stroke-width="0.5"/>
+<line x1="66.75" y1="119.74" x2="47.25" y2="119.74" stroke-width="1.1"/>
+<line x1="66.75" y1="115.61" x2="59.25" y2="115.61" stroke-width="0.5"/>
+<line x1="66.75" y1="111.48" x2="59.25" y2="111.48" stroke-width="0.5"/>
+<line x1="66.75" y1="107.36" x2="59.25" y2="107.36" stroke-width="0.5"/>
+<line x1="66.75" y1="103.23" x2="59.25" y2="103.23" stroke-width="0.5"/>
+<line x1="66.75" y1="99.1" x2="53.25" y2="99.1" stroke-width="0.8"/>
+<line x1="66.75" y1="94.98" x2="59.25" y2="94.98" stroke-width="0.5"/>
+<line x1="66.75" y1="90.85" x2="59.25" y2="90.85" stroke-width="0.5"/>
+<line x1="66.75" y1="86.72" x2="59.25" y2="86.72" stroke-width="0.5"/>
+<line x1="66.75" y1="82.6" x2="59.25" y2="82.6" stroke-width="0.5"/>
+<line x1="66.75" y1="78.47" x2="47.25" y2="78.47" stroke-width="1.1"/>
+<line x1="66.75" y1="74.34" x2="59.25" y2="74.34" stroke-width="0.5"/>
+<line x1="66.75" y1="70.21" x2="59.25" y2="70.21" stroke-width="0.5"/>
+<line x1="66.75" y1="66.09" x2="59.25" y2="66.09" stroke-width="0.5"/>
+<line x1="66.75" y1="61.96" x2="59.25" y2="61.96" stroke-width="0.5"/>
+<line x1="66.75" y1="57.83" x2="53.25" y2="57.83" stroke-width="0.8"/>
+<line x1="66.75" y1="53.71" x2="59.25" y2="53.71" stroke-width="0.5"/>
+<line x1="66.75" y1="49.58" x2="59.25" y2="49.58" stroke-width="0.5"/>
+<line x1="66.75" y1="45.45" x2="59.25" y2="45.45" stroke-width="0.5"/>
+<line x1="66.75" y1="41.33" x2="59.25" y2="41.33" stroke-width="0.5"/>
+<line x1="66.75" y1="37.2" x2="47.25" y2="37.2" stroke-width="1.1"/>
+</g>
+<g font-size="12.75" fill="#3e4c59" text-anchor="end">
+<text x="41.25" y="371.85">-30</text>
+<text x="41.25" y="330.58">-20</text>
+<text x="41.25" y="289.31">-10</text>
+<text x="41.25" y="248.04">0</text>
+<text x="41.25" y="206.78">10</text>
+<text x="41.25" y="165.51">20</text>
+<text x="41.25" y="124.24">30</text>
+<text x="41.25" y="82.97">40</text>
+<text x="41.25" y="41.7">50</text>
+</g>
+</svg>
+<div class="answer-line"></div>
+</div>
+<div class="card">
+<p class="prompt">4. 读出温度计上的温度</p>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 465" width="150" height="465" role="img" aria-label="温度计">
+<title>温度计</title>
+<rect x="66.75" y="37.2" width="25.5" height="336.15" rx="12.75" fill="#f8fafc" stroke="#323f4b" stroke-width="1.8"/>
+<circle cx="79.5" cy="381.38" r="25.5" fill="#f8fafc" stroke="#323f4b" stroke-width="1.8"/>
+<circle cx="79.5" cy="381.38" r="18.36" fill="#d64545" stroke="#a61b1b"/>
+<rect x="71.85" y="288.94" width="15.3" height="84.41" rx="7.65" fill="#d64545"/>
+<g stroke="#52606d" stroke-linecap="round">
+<line x1="66.75" y1="367.35" x2="47.25" y2="367.35" stroke-width="1.1"/>
+<line x1="66.75" y1="363.22" x2="59.25" y2="363.22" stroke-width="0.5"/>
+<line x1="66.75" y1="359.1" x2="59.25" y2="359.1" stroke-width="0.5"/>
+<line x1="66.75" y1="354.97" x2="59.25" y2="354.97" stroke-width="0.5"/>
+<line x1="66.75" y1="350.84" x2="59.25" y2="350.84" stroke-width="0.5"/>
+<line x1="66.75" y1="346.72" x2="53.25" y2="346.72" stroke-width="0.8"/>
+<line x1="66.75" y1="342.59" x2="59.25" y2="342.59" stroke-width="0.5"/>
+<line x1="66.75" y1="338.46" x2="59.25" y2="338.46" stroke-width="0.5"/>
+<line x1="66.75" y1="334.34" x2="59.25" y2="334.34" stroke-width="0.5"/>
+<line x1="66.75" y1="330.21" x2="59.25" y2="330.21" stroke-width="0.5"/>
+<line x1="66.75" y1="326.08" x2="47.25" y2="326.08" stroke-width="1.1"/>
+<line x1="66.75" y1="321.95" x2="59.25" y2="321.95" stroke-width="0.5"/>
+<line x1="66.75" y1="317.83" x2="59.25" y2="317.83" stroke-width="0.5"/>
+<line x1="66.75" y1="313.7" x2="59.25" y2="313.7" stroke-width="0.5"/>
+<line x1="66.75" y1="309.57" x2="59.25" y2="309.57" stroke-width="0.5"/>
+<line x1="66.75" y1="305.45" x2="53.25" y2="305.45" stroke-width="0.8"/>
+<line x1="66.75" y1="301.32" x2="59.25" y2="301.32" stroke-width="0.5"/>
+<line x1="66.75" y1="297.19" x2="59.25" y2="297.19" stroke-width="0.5"/>
+<line x1="66.75" y1="293.07" x2="59.25" y2="293.07" stroke-width="0.5"/>
+<line x1="66.75" y1="288.94" x2="59.25" y2="288.94" stroke-width="0.5"/>
+<line x1="66.75" y1="284.81" x2="47.25" y2="284.81" stroke-width="1.1"/>
+<line x1="66.75" y1="280.69" x2="59.25" y2="280.69" stroke-width="0.5"/>
+<line x1="66.75" y1="276.56" x2="59.25" y2="276.56" stroke-width="0.5"/>
+<line x1="66.75" y1="272.43" x2="59.25" y2="272.43" stroke-width="0.5"/>
+<line x1="66.75" y1="268.31" x2="59.25" y2="268.31" stroke-width="0.5"/>
+<line x1="66.75" y1="264.18" x2="53.25" y2="264.18" stroke-width="0.8"/>
+<line x1="66.75" y1="260.05" x2="59.25" y2="260.05" stroke-width="0.5"/>
+<line x1="66.75" y1="255.92" x2="59.25" y2="255.92" stroke-width="0.5"/>
+<line x1="66.75" y1="251.8" x2="59.25" y2="251.8" stroke-width="0.5"/>
+<line x1="66.75" y1="247.67" x2="59.25" y2="247.67" stroke-width="0.5"/>
+<line x1="66.75" y1="243.54" x2="47.25" y2="243.54" stroke-width="1.1"/>
+<line x1="66.75" y1="239.42" x2="59.25" y2="239.42" stroke-width="0.5"/>
+<line x1="66.75" y1="235.29" x2="59.25" y2="235.29" stroke-width="0.5"/>
+<line x1="66.75" y1="231.16" x2="59.25" y2="231.16" stroke-width="0.5"/>
+<line x1="66.75" y1="227.04" x2="59.25" y2="227.04" stroke-width="0.5"/>
+<line x1="66.75" y1="222.91" x2="53.25" y2="222.91" stroke-width="0.8"/>
+<line x1="66.75" y1="218.78" x2="59.25" y2="218.78" stroke-width="0.5"/>
+<line x1="66.75" y1="214.66" x2="59.25" y2="214.66" stroke-width="0.5"/>
+<line x1="66.75" y1="210.53" x2="59.25" y2="210.53" stroke-width="0.5"/>
+<line x1="66.75" y1="206.4" x2="59.25" y2="206.4" stroke-width="0.5"/>
+<line x1="66.75" y1="202.28" x2="47.25" y2="202.28" stroke-width="1.1"/>
+<line x1="66.75" y1="198.15" x2="59.25" y2="198.15" stroke-width="0.5"/>
+<line x1="66.75" y1="194.02" x2="59.25" y2="194.02" stroke-width="0.5"/>
+<line x1="66.75" y1="189.89" x2="59.25" y2="189.89" stroke-width="0.5"/>
+<line x1="66.75" y1="185.77" x2="59.25" y2="185.77" stroke-width="0.5"/>
+<line x1="66.75" y1="181.64" x2="53.25" y2="181.64" stroke-width="0.8"/>
+<line x1="66.75" y1="177.51" x2="59.25" y2="177.51" stroke-width="0.5"/>
+<line x1="66.75" y1="173.39" x2="59.25" y2="173.39" stroke-width="0.5"/>
+<line x1="66.75" y1="169.26" x2="59.25" y2="169.26" stroke-width="0.5"/>
+<line x1="66.75" y1="165.13" x2="59.25" y2="165.13" stroke-width="0.5"/>
+<line x1="66.75" y1="161.01" x2="47.25" y2="161.01" stroke-width="1.1"/>
+<line x1="66.75" y1="156.88" x2="59.25" y2="156.88" stroke-width="0.5"/>
+<line x1="66.75" y1="152.75" x2="59.25" y2="152.75" stroke-width="0.5"/>
+<line x1="66.75" y1="148.63" x2="59.25" y2="148.63" stroke-width="0.5"/>
+<line x1="66.75" y1="144.5" x2="59.25" y2="144.5" stroke-width="0.5"/>
+<line x1="66.75" y1="140.37" x2="53.25" y2="140.37" stroke-width="0.8"/>
+<line x1="66.75" y1="136.25" x2="59.25" y2="136.25" stroke-width="0.5"/>
+<line x1="66.75" y1="132.12" x2="59.25" y2="132.12" stroke-width="0.5"/>
+<line x1="66.75" y1="127.99" x2="59.25" y2="127.99" stroke-width="0.5"/>
+<line x1="66.75" y1="123.86" x2="59.25" y2="123.86" stroke-width="0.5"/>
+<line x1="66.75" y1="119.74" x2="47.25" y2="119.74" stroke-width="1.1"/>
+<line x1="66.75" y1="115.61" x2="59.25" y2="115.61" stroke-width="0.5"/>
+<line x1="66.75" y1="111.48" x2="59.25" y2="111.48" stroke-width="0.5"/>
+<line x1="66.75" y1="107.36" x2="59.25" y2="107.36" stroke-width="0.5"/>
+<line x1="66.75" y1="103.23" x2="59.25" y2="103.23" stroke-width="0.5"/>
+<line x1="66.75" y1="99.1" x2="53.25" y2="99.1" stroke-width="0.8"/>
+<line x1="66.75" y1="94.98" x2="59.25" y2="94.98" stroke-width="0.5"/>
+<line x1="66.75" y1="90.85" x2="59.25" y2="90.85" stroke-width="0.5"/>
+<line x1="66.75" y1="86.72" x2="59.25" y2="86.72" stroke-width="0.5"/>
+<line x1="66.75" y1="82.6" x2="59.25" y2="82.6" stroke-width="0.5"/>
+<line x1="66.75" y1="78.47" x2="47.25" y2="78.47" stroke-width="1.1"/>
+<line x1="66.75" y1="74.34" x2="59.25" y2="74.34" stroke-width="0.5"/>
+<line x1="66.75" y1="70.21" x2="59.25" y2="70.21" stroke-width="0.5"/>
+<line x1="66.75" y1="66.09" x2="59.25" y2="66.09" stroke-width="0.5"/>
+<line x1="66.75" y1="61.96" x2="59.25" y2="61.96" stroke-width="0.5"/>
+<line x1="66.75" y1="57.83" x2="53.25" y2="57.83" stroke-width="0.8"/>
+<line x1="66.75" y1="53.71" x2="59.25" y2="53.71" stroke-width="0.5"/>
+<line x1="66.75" y1="49.58" x2="59.25" y2="49.58" stroke-width="0.5"/>
+<line x1="66.75" y1="45.45" x2="59.25" y2="45.45" stroke-width="0.5"/>
+<line x1="66.75" y1="41.33" x2="59.25" y2="41.33" stroke-width="0.5"/>
+<line x1="66.75" y1="37.2" x2="47.25" y2="37.2" stroke-width="1.1"/>
+</g>
+<g font-size="12.75" fill="#3e4c59" text-anchor="end">
+<text x="41.25" y="371.85">-30</text>
+<text x="41.25" y="330.58">-20</text>
+<text x="41.25" y="289.31">-10</text>
+<text x="41.25" y="248.04">0</text>
+<text x="41.25" y="206.78">10</text>
+<text x="41.25" y="165.51">20</text>
+<text x="41.25" y="124.24">30</text>
+<text x="41.25" y="82.97">40</text>
+<text x="41.25" y="41.7">50</text>
+</g>
+</svg>
+<div class="answer-line"></div>
+</div>
+<div class="card">
+<p class="prompt">5. 温度从 17°C 变到 -17°C，变化了多少？</p>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 465" width="150" height="465" role="img" aria-label="温度计">
+<title>温度计</title>
+<rect x="66.75" y="37.2" width="25.5" height="336.15" rx="12.75" fill="#f8fafc" stroke="#323f4b" stroke-width="1.8"/>
+<circle cx="79.5" cy="381.38" r="25.5" fill="#f8fafc" stroke="#323f4b" stroke-width="1.8"/>
+<circle cx="79.5" cy="381.38" r="18.36" fill="#d64545" stroke="#a61b1b"/>
+<rect x="71.85" y="313.7" width="15.3" height="59.65" rx="7.65" fill="#d64545"/>
+<g stroke="#52606d" stroke-linecap="round">
+<line x1="66.75" y1="367.35" x2="47.25" y2="367.35" stroke-width="1.1"/>
+<line x1="66.75" y1="363.22" x2="59.25" y2="363.22" stroke-width="0.5"/>
+<line x1="66.75" y1="359.1" x2="59.25" y2="359.1" stroke-width="0.5"/>
+<line x1="66.75" y1="354.97" x2="59.25" y2="354.97" stroke-width="0.5"/>
+<line x1="66.75" y1="350.84" x2="59.25" y2="350.84" stroke-width="0.5"/>
+<line x1="66.75" y1="346.72" x2="53.25" y2="346.72" stroke-width="0.8"/>
+<line x1="66.75" y1="342.59" x2="59.25" y2="342.59" stroke-width="0.5"/>
+<line x1="66.75" y1="338.46" x2="59.25" y2="338.46" stroke-width="0.5"/>
+<line x1="66.75" y1="334.34" x2="59.25" y2="334.34" stroke-width="0.5"/>
+<line x1="66.75" y1="330.21" x2="59.25" y2="330.21" stroke-width="0.5"/>
+<line x1="66.75" y1="326.08" x2="47.25" y2="326.08" stroke-width="1.1"/>
+<line x1="66.75" y1="321.95" x2="59.25" y2="321.95" stroke-width="0.5"/>
+<line x1="66.75" y1="317.83" x2="59.25" y2="317.83" stroke-width="0.5"/>
+<line x1="66.75" y1="313.7" x2="59.25" y2="313.7" stroke-width="0.5"/>
+<line x1="66.75" y1="309.57" x2="59.25" y2="309.57" stroke-width="0.5"/>
+<line x1="66.75" y1="305.45" x2="53.25" y2="305.45" stroke-width="0.8"/>
+<line x1="66.75" y1="301.32" x2="59.25" y2="301.32" stroke-width="0.5"/>
+<line x1="66.75" y1="297.19" x2="59.25" y2="297.19" stroke-width="0.5"/>
+<line x1="66.75" y1="293.07" x2="59.25" y2="293.07" stroke-width="0.5"/>
+<line x1="66.75" y1="288.94" x2="59.25" y2="288.94" stroke-width="0.5"/>
+<line x1="66.75" y1="284.81" x2="47.25" y2="284.81" stroke-width="1.1"/>
+<line x1="66.75" y1="280.69" x2="59.25" y2="280.69" stroke-width="0.5"/>
+<line x1="66.75" y1="276.56" x2="59.25" y2="276.56" stroke-width="0.5"/>
+<line x1="66.75" y1="272.43" x2="59.25" y2="272.43" stroke-width="0.5"/>
+<line x1="66.75" y1="268.31" x2="59.25" y2="268.31" stroke-width="0.5"/>
+<line x1="66.75" y1="264.18" x2="53.25" y2="264.18" stroke-width="0.8"/>
+<line x1="66.75" y1="260.05" x2="59.25" y2="260.05" stroke-width="0.5"/>
+<line x1="66.75" y1="255.92" x2="59.25" y2="255.92" stroke-width="0.5"/>
+<line x1="66.75" y1="251.8" x2="59.25" y2="251.8" stroke-width="0.5"/>
+<line x1="66.75" y1="247.67" x2="59.25" y2="247.67" stroke-width="0.5"/>
+<line x1="66.75" y1="243.54" x2="47.25" y2="243.54" stroke-width="1.1"/>
+<line x1="66.75" y1="239.42" x2="59.25" y2="239.42" stroke-width="0.5"/>
+<line x1="66.75" y1="235.29" x2="59.25" y2="235.29" stroke-width="0.5"/>
+<line x1="66.75" y1="231.16" x2="59.25" y2="231.16" stroke-width="0.5"/>
+<line x1="66.75" y1="227.04" x2="59.25" y2="227.04" stroke-width="0.5"/>
+<line x1="66.75" y1="222.91" x2="53.25" y2="222.91" stroke-width="0.8"/>
+<line x1="66.75" y1="218.78" x2="59.25" y2="218.78" stroke-width="0.5"/>
+<line x1="66.75" y1="214.66" x2="59.25" y2="214.66" stroke-width="0.5"/>
+<line x1="66.75" y1="210.53" x2="59.25" y2="210.53" stroke-width="0.5"/>
+<line x1="66.75" y1="206.4" x2="59.25" y2="206.4" stroke-width="0.5"/>
+<line x1="66.75" y1="202.28" x2="47.25" y2="202.28" stroke-width="1.1"/>
+<line x1="66.75" y1="198.15" x2="59.25" y2="198.15" stroke-width="0.5"/>
+<line x1="66.75" y1="194.02" x2="59.25" y2="194.02" stroke-width="0.5"/>
+<line x1="66.75" y1="189.89" x2="59.25" y2="189.89" stroke-width="0.5"/>
+<line x1="66.75" y1="185.77" x2="59.25" y2="185.77" stroke-width="0.5"/>
+<line x1="66.75" y1="181.64" x2="53.25" y2="181.64" stroke-width="0.8"/>
+<line x1="66.75" y1="177.51" x2="59.25" y2="177.51" stroke-width="0.5"/>
+<line x1="66.75" y1="173.39" x2="59.25" y2="173.39" stroke-width="0.5"/>
+<line x1="66.75" y1="169.26" x2="59.25" y2="169.26" stroke-width="0.5"/>
+<line x1="66.75" y1="165.13" x2="59.25" y2="165.13" stroke-width="0.5"/>
+<line x1="66.75" y1="161.01" x2="47.25" y2="161.01" stroke-width="1.1"/>
+<line x1="66.75" y1="156.88" x2="59.25" y2="156.88" stroke-width="0.5"/>
+<line x1="66.75" y1="152.75" x2="59.25" y2="152.75" stroke-width="0.5"/>
+<line x1="66.75" y1="148.63" x2="59.25" y2="148.63" stroke-width="0.5"/>
+<line x1="66.75" y1="144.5" x2="59.25" y2="144.5" stroke-width="0.5"/>
+<line x1="66.75" y1="140.37" x2="53.25" y2="140.37" stroke-width="0.8"/>
+<line x1="66.75" y1="136.25" x2="59.25" y2="136.25" stroke-width="0.5"/>
+<line x1="66.75" y1="132.12" x2="59.25" y2="132.12" stroke-width="0.5"/>
+<line x1="66.75" y1="127.99" x2="59.25" y2="127.99" stroke-width="0.5"/>
+<line x1="66.75" y1="123.86" x2="59.25" y2="123.86" stroke-width="0.5"/>
+<line x1="66.75" y1="119.74" x2="47.25" y2="119.74" stroke-width="1.1"/>
+<line x1="66.75" y1="115.61" x2="59.25" y2="115.61" stroke-width="0.5"/>
+<line x1="66.75" y1="111.48" x2="59.25" y2="111.48" stroke-width="0.5"/>
+<line x1="66.75" y1="107.36" x2="59.25" y2="107.36" stroke-width="0.5"/>
+<line x1="66.75" y1="103.23" x2="59.25" y2="103.23" stroke-width="0.5"/>
+<line x1="66.75" y1="99.1" x2="53.25" y2="99.1" stroke-width="0.8"/>
+<line x1="66.75" y1="94.98" x2="59.25" y2="94.98" stroke-width="0.5"/>
+<line x1="66.75" y1="90.85" x2="59.25" y2="90.85" stroke-width="0.5"/>
+<line x1="66.75" y1="86.72" x2="59.25" y2="86.72" stroke-width="0.5"/>
+<line x1="66.75" y1="82.6" x2="59.25" y2="82.6" stroke-width="0.5"/>
+<line x1="66.75" y1="78.47" x2="47.25" y2="78.47" stroke-width="1.1"/>
+<line x1="66.75" y1="74.34" x2="59.25" y2="74.34" stroke-width="0.5"/>
+<line x1="66.75" y1="70.21" x2="59.25" y2="70.21" stroke-width="0.5"/>
+<line x1="66.75" y1="66.09" x2="59.25" y2="66.09" stroke-width="0.5"/>
+<line x1="66.75" y1="61.96" x2="59.25" y2="61.96" stroke-width="0.5"/>
+<line x1="66.75" y1="57.83" x2="53.25" y2="57.83" stroke-width="0.8"/>
+<line x1="66.75" y1="53.71" x2="59.25" y2="53.71" stroke-width="0.5"/>
+<line x1="66.75" y1="49.58" x2="59.25" y2="49.58" stroke-width="0.5"/>
+<line x1="66.75" y1="45.45" x2="59.25" y2="45.45" stroke-width="0.5"/>
+<line x1="66.75" y1="41.33" x2="59.25" y2="41.33" stroke-width="0.5"/>
+<line x1="66.75" y1="37.2" x2="47.25" y2="37.2" stroke-width="1.1"/>
+</g>
+<g font-size="12.75" fill="#3e4c59" text-anchor="end">
+<text x="41.25" y="371.85">-30</text>
+<text x="41.25" y="330.58">-20</text>
+<text x="41.25" y="289.31">-10</text>
+<text x="41.25" y="248.04">0</text>
+<text x="41.25" y="206.78">10</text>
+<text x="41.25" y="165.51">20</text>
+<text x="41.25" y="124.24">30</text>
+<text x="41.25" y="82.97">40</text>
+<text x="41.25" y="41.7">50</text>
+</g>
+</svg>
+<div class="answer-line"></div>
+</div>
+<div class="card">
+<p class="prompt">6. 读出温度计上的温度</p>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 465" width="150" height="465" role="img" aria-label="温度计">
+<title>温度计</title>
+<rect x="66.75" y="37.2" width="25.5" height="336.15" rx="12.75" fill="#f8fafc" stroke="#323f4b" stroke-width="1.8"/>
+<circle cx="79.5" cy="381.38" r="25.5" fill="#f8fafc" stroke="#323f4b" stroke-width="1.8"/>
+<circle cx="79.5" cy="381.38" r="18.36" fill="#d64545" stroke="#a61b1b"/>
+<rect x="71.85" y="222.91" width="15.3" height="150.44" rx="7.65" fill="#d64545"/>
+<g stroke="#52606d" stroke-linecap="round">
+<line x1="66.75" y1="367.35" x2="47.25" y2="367.35" stroke-width="1.1"/>
+<line x1="66.75" y1="363.22" x2="59.25" y2="363.22" stroke-width="0.5"/>
+<line x1="66.75" y1="359.1" x2="59.25" y2="359.1" stroke-width="0.5"/>
+<line x1="66.75" y1="354.97" x2="59.25" y2="354.97" stroke-width="0.5"/>
+<line x1="66.75" y1="350.84" x2="59.25" y2="350.84" stroke-width="0.5"/>
+<line x1="66.75" y1="346.72" x2="53.25" y2="346.72" stroke-width="0.8"/>
+<line x1="66.75" y1="342.59" x2="59.25" y2="342.59" stroke-width="0.5"/>
+<line x1="66.75" y1="338.46" x2="59.25" y2="338.46" stroke-width="0.5"/>
+<line x1="66.75" y1="334.34" x2="59.25" y2="334.34" stroke-width="0.5"/>
+<line x1="66.75" y1="330.21" x2="59.25" y2="330.21" stroke-width="0.5"/>
+<line x1="66.75" y1="326.08" x2="47.25" y2="326.08" stroke-width="1.1"/>
+<line x1="66.75" y1="321.95" x2="59.25" y2="321.95" stroke-width="0.5"/>
+<line x1="66.75" y1="317.83" x2="59.25" y2="317.83" stroke-width="0.5"/>
+<line x1="66.75" y1="313.7" x2="59.25" y2="313.7" stroke-width="0.5"/>
+<line x1="66.75" y1="309.57" x2="59.25" y2="309.57" stroke-width="0.5"/>
+<line x1="66.75" y1="305.45" x2="53.25" y2="305.45" stroke-width="0.8"/>
+<line x1="66.75" y1="301.32" x2="59.25" y2="301.32" stroke-width="0.5"/>
+<line x1="66.75" y1="297.19" x2="59.25" y2="297.19" stroke-width="0.5"/>
+<line x1="66.75" y1="293.07" x2="59.25" y2="293.07" stroke-width="0.5"/>
+<line x1="66.75" y1="288.94" x2="59.25" y2="288.94" stroke-width="0.5"/>
+<line x1="66.75" y1="284.81" x2="47.25" y2="284.81" stroke-width="1.1"/>
+<line x1="66.75" y1="280.69" x2="59.25" y2="280.69" stroke-width="0.5"/>
+<line x1="66.75" y1="276.56" x2="59.25" y2="276.56" stroke-width="0.5"/>
+<line x1="66.75" y1="272.43" x2="59.25" y2="272.43" stroke-width="0.5"/>
+<line x1="66.75" y1="268.31" x2="59.25" y2="268.31" stroke-width="0.5"/>
+<line x1="66.75" y1="264.18" x2="53.25" y2="264.18" stroke-width="0.8"/>
+<line x1="66.75" y1="260.05" x2="59.25" y2="260.05" stroke-width="0.5"/>
+<line x1="66.75" y1="255.92" x2="59.25" y2="255.92" stroke-width="0.5"/>
+<line x1="66.75" y1="251.8" x2="59.25" y2="251.8" stroke-width="0.5"/>
+<line x1="66.75" y1="247.67" x2="59.25" y2="247.67" stroke-width="0.5"/>
+<line x1="66.75" y1="243.54" x2="47.25" y2="243.54" stroke-width="1.1"/>
+<line x1="66.75" y1="239.42" x2="59.25" y2="239.42" stroke-width="0.5"/>
+<line x1="66.75" y1="235.29" x2="59.25" y2="235.29" stroke-width="0.5"/>
+<line x1="66.75" y1="231.16" x2="59.25" y2="231.16" stroke-width="0.5"/>
+<line x1="66.75" y1="227.04" x2="59.25" y2="227.04" stroke-width="0.5"/>
+<line x1="66.75" y1="222.91" x2="53.25" y2="222.91" stroke-width="0.8"/>
+<line x1="66.75" y1="218.78" x2="59.25" y2="218.78" stroke-width="0.5"/>
+<line x1="66.75" y1="214.66" x2="59.25" y2="214.66" stroke-width="0.5"/>
+<line x1="66.75" y1="210.53" x2="59.25" y2="210.53" stroke-width="0.5"/>
+<line x1="66.75" y1="206.4" x2="59.25" y2="206.4" stroke-width="0.5"/>
+<line x1="66.75" y1="202.28" x2="47.25" y2="202.28" stroke-width="1.1"/>
+<line x1="66.75" y1="198.15" x2="59.25" y2="198.15" stroke-width="0.5"/>
+<line x1="66.75" y1="194.02" x2="59.25" y2="194.02" stroke-width="0.5"/>
+<line x1="66.75" y1="189.89" x2="59.25" y2="189.89" stroke-width="0.5"/>
+<line x1="66.75" y1="185.77" x2="59.25" y2="185.77" stroke-width="0.5"/>
+<line x1="66.75" y1="181.64" x2="53.25" y2="181.64" stroke-width="0.8"/>
+<line x1="66.75" y1="177.51" x2="59.25" y2="177.51" stroke-width="0.5"/>
+<line x1="66.75" y1="173.39" x2="59.25" y2="173.39" stroke-width="0.5"/>
+<line x1="66.75" y1="169.26" x2="59.25" y2="169.26" stroke-width="0.5"/>
+<line x1="66.75" y1="165.13" x2="59.25" y2="165.13" stroke-width="0.5"/>
+<line x1="66.75" y1="161.01" x2="47.25" y2="161.01" stroke-width="1.1"/>
+<line x1="66.75" y1="156.88" x2="59.25" y2="156.88" stroke-width="0.5"/>
+<line x1="66.75" y1="152.75" x2="59.25" y2="152.75" stroke-width="0.5"/>
+<line x1="66.75" y1="148.63" x2="59.25" y2="148.63" stroke-width="0.5"/>
+<line x1="66.75" y1="144.5" x2="59.25" y2="144.5" stroke-width="0.5"/>
+<line x1="66.75" y1="140.37" x2="53.25" y2="140.37" stroke-width="0.8"/>
+<line x1="66.75" y1="136.25" x2="59.25" y2="136.25" stroke-width="0.5"/>
+<line x1="66.75" y1="132.12" x2="59.25" y2="132.12" stroke-width="0.5"/>
+<line x1="66.75" y1="127.99" x2="59.25" y2="127.99" stroke-width="0.5"/>
+<line x1="66.75" y1="123.86" x2="59.25" y2="123.86" stroke-width="0.5"/>
+<line x1="66.75" y1="119.74" x2="47.25" y2="119.74" stroke-width="1.1"/>
+<line x1="66.75" y1="115.61" x2="59.25" y2="115.61" stroke-width="0.5"/>
+<line x1="66.75" y1="111.48" x2="59.25" y2="111.48" stroke-width="0.5"/>
+<line x1="66.75" y1="107.36" x2="59.25" y2="107.36" stroke-width="0.5"/>
+<line x1="66.75" y1="103.23" x2="59.25" y2="103.23" stroke-width="0.5"/>
+<line x1="66.75" y1="99.1" x2="53.25" y2="99.1" stroke-width="0.8"/>
+<line x1="66.75" y1="94.98" x2="59.25" y2="94.98" stroke-width="0.5"/>
+<line x1="66.75" y1="90.85" x2="59.25" y2="90.85" stroke-width="0.5"/>
+<line x1="66.75" y1="86.72" x2="59.25" y2="86.72" stroke-width="0.5"/>
+<line x1="66.75" y1="82.6" x2="59.25" y2="82.6" stroke-width="0.5"/>
+<line x1="66.75" y1="78.47" x2="47.25" y2="78.47" stroke-width="1.1"/>
+<line x1="66.75" y1="74.34" x2="59.25" y2="74.34" stroke-width="0.5"/>
+<line x1="66.75" y1="70.21" x2="59.25" y2="70.21" stroke-width="0.5"/>
+<line x1="66.75" y1="66.09" x2="59.25" y2="66.09" stroke-width="0.5"/>
+<line x1="66.75" y1="61.96" x2="59.25" y2="61.96" stroke-width="0.5"/>
+<line x1="66.75" y1="57.83" x2="53.25" y2="57.83" stroke-width="0.8"/>
+<line x1="66.75" y1="53.71" x2="59.25" y2="53.71" stroke-width="0.5"/>
+<line x1="66.75" y1="49.58" x2="59.25" y2="49.58" stroke-width="0.5"/>
+<line x1="66.75" y1="45.45" x2="59.25" y2="45.45" stroke-width="0.5"/>
+<line x1="66.75" y1="41.33" x2="59.25" y2="41.33" stroke-width="0.5"/>
+<line x1="66.75" y1="37.2" x2="47.25" y2="37.2" stroke-width="1.1"/>
+</g>
+<g font-size="12.75" fill="#3e4c59" text-anchor="end">
+<text x="41.25" y="371.85">-30</text>
+<text x="41.25" y="330.58">-20</text>
+<text x="41.25" y="289.31">-10</text>
+<text x="41.25" y="248.04">0</text>
+<text x="41.25" y="206.78">10</text>
+<text x="41.25" y="165.51">20</text>
+<text x="41.25" y="124.24">30</text>
+<text x="41.25" y="82.97">40</text>
+<text x="41.25" y="41.7">50</text>
+</g>
+</svg>
+<div class="answer-line"></div>
+</div>
+<div class="card">
+<p class="prompt">7. 读出温度计上的温度</p>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 465" width="150" height="465" role="img" aria-label="温度计">
+<title>温度计</title>
+<rect x="66.75" y="37.2" width="25.5" height="336.15" rx="12.75" fill="#f8fafc" stroke="#323f4b" stroke-width="1.8"/>
+<circle cx="79.5" cy="381.38" r="25.5" fill="#f8fafc" stroke="#323f4b" stroke-width="1.8"/>
+<circle cx="79.5" cy="381.38" r="18.36" fill="#d64545" stroke="#a61b1b"/>
+<rect x="71.85" y="156.88" width="15.3" height="216.47" rx="7.65" fill="#d64545"/>
+<g stroke="#52606d" stroke-linecap="round">
+<line x1="66.75" y1="367.35" x2="47.25" y2="367.35" stroke-width="1.1"/>
+<line x1="66.75" y1="363.22" x2="59.25" y2="363.22" stroke-width="0.5"/>
+<line x1="66.75" y1="359.1" x2="59.25" y2="359.1" stroke-width="0.5"/>
+<line x1="66.75" y1="354.97" x2="59.25" y2="354.97" stroke-width="0.5"/>
+<line x1="66.75" y1="350.84" x2="59.25" y2="350.84" stroke-width="0.5"/>
+<line x1="66.75" y1="346.72" x2="53.25" y2="346.72" stroke-width="0.8"/>
+<line x1="66.75" y1="342.59" x2="59.25" y2="342.59" stroke-width="0.5"/>
+<line x1="66.75" y1="338.46" x2="59.25" y2="338.46" stroke-width="0.5"/>
+<line x1="66.75" y1="334.34" x2="59.25" y2="334.34" stroke-width="0.5"/>
+<line x1="66.75" y1="330.21" x2="59.25" y2="330.21" stroke-width="0.5"/>
+<line x1="66.75" y1="326.08" x2="47.25" y2="326.08" stroke-width="1.1"/>
+<line x1="66.75" y1="321.95" x2="59.25" y2="321.95" stroke-width="0.5"/>
+<line x1="66.75" y1="317.83" x2="59.25" y2="317.83" stroke-width="0.5"/>
+<line x1="66.75" y1="313.7" x2="59.25" y2="313.7" stroke-width="0.5"/>
+<line x1="66.75" y1="309.57" x2="59.25" y2="309.57" stroke-width="0.5"/>
+<line x1="66.75" y1="305.45" x2="53.25" y2="305.45" stroke-width="0.8"/>
+<line x1="66.75" y1="301.32" x2="59.25" y2="301.32" stroke-width="0.5"/>
+<line x1="66.75" y1="297.19" x2="59.25" y2="297.19" stroke-width="0.5"/>
+<line x1="66.75" y1="293.07" x2="59.25" y2="293.07" stroke-width="0.5"/>
+<line x1="66.75" y1="288.94" x2="59.25" y2="288.94" stroke-width="0.5"/>
+<line x1="66.75" y1="284.81" x2="47.25" y2="284.81" stroke-width="1.1"/>
+<line x1="66.75" y1="280.69" x2="59.25" y2="280.69" stroke-width="0.5"/>
+<line x1="66.75" y1="276.56" x2="59.25" y2="276.56" stroke-width="0.5"/>
+<line x1="66.75" y1="272.43" x2="59.25" y2="272.43" stroke-width="0.5"/>
+<line x1="66.75" y1="268.31" x2="59.25" y2="268.31" stroke-width="0.5"/>
+<line x1="66.75" y1="264.18" x2="53.25" y2="264.18" stroke-width="0.8"/>
+<line x1="66.75" y1="260.05" x2="59.25" y2="260.05" stroke-width="0.5"/>
+<line x1="66.75" y1="255.92" x2="59.25" y2="255.92" stroke-width="0.5"/>
+<line x1="66.75" y1="251.8" x2="59.25" y2="251.8" stroke-width="0.5"/>
+<line x1="66.75" y1="247.67" x2="59.25" y2="247.67" stroke-width="0.5"/>
+<line x1="66.75" y1="243.54" x2="47.25" y2="243.54" stroke-width="1.1"/>
+<line x1="66.75" y1="239.42" x2="59.25" y2="239.42" stroke-width="0.5"/>
+<line x1="66.75" y1="235.29" x2="59.25" y2="235.29" stroke-width="0.5"/>
+<line x1="66.75" y1="231.16" x2="59.25" y2="231.16" stroke-width="0.5"/>
+<line x1="66.75" y1="227.04" x2="59.25" y2="227.04" stroke-width="0.5"/>
+<line x1="66.75" y1="222.91" x2="53.25" y2="222.91" stroke-width="0.8"/>
+<line x1="66.75" y1="218.78" x2="59.25" y2="218.78" stroke-width="0.5"/>
+<line x1="66.75" y1="214.66" x2="59.25" y2="214.66" stroke-width="0.5"/>
+<line x1="66.75" y1="210.53" x2="59.25" y2="210.53" stroke-width="0.5"/>
+<line x1="66.75" y1="206.4" x2="59.25" y2="206.4" stroke-width="0.5"/>
+<line x1="66.75" y1="202.28" x2="47.25" y2="202.28" stroke-width="1.1"/>
+<line x1="66.75" y1="198.15" x2="59.25" y2="198.15" stroke-width="0.5"/>
+<line x1="66.75" y1="194.02" x2="59.25" y2="194.02" stroke-width="0.5"/>
+<line x1="66.75" y1="189.89" x2="59.25" y2="189.89" stroke-width="0.5"/>
+<line x1="66.75" y1="185.77" x2="59.25" y2="185.77" stroke-width="0.5"/>
+<line x1="66.75" y1="181.64" x2="53.25" y2="181.64" stroke-width="0.8"/>
+<line x1="66.75" y1="177.51" x2="59.25" y2="177.51" stroke-width="0.5"/>
+<line x1="66.75" y1="173.39" x2="59.25" y2="173.39" stroke-width="0.5"/>
+<line x1="66.75" y1="169.26" x2="59.25" y2="169.26" stroke-width="0.5"/>
+<line x1="66.75" y1="165.13" x2="59.25" y2="165.13" stroke-width="0.5"/>
+<line x1="66.75" y1="161.01" x2="47.25" y2="161.01" stroke-width="1.1"/>
+<line x1="66.75" y1="156.88" x2="59.25" y2="156.88" stroke-width="0.5"/>
+<line x1="66.75" y1="152.75" x2="59.25" y2="152.75" stroke-width="0.5"/>
+<line x1="66.75" y1="148.63" x2="59.25" y2="148.63" stroke-width="0.5"/>
+<line x1="66.75" y1="144.5" x2="59.25" y2="144.5" stroke-width="0.5"/>
+<line x1="66.75" y1="140.37" x2="53.25" y2="140.37" stroke-width="0.8"/>
+<line x1="66.75" y1="136.25" x2="59.25" y2="136.25" stroke-width="0.5"/>
+<line x1="66.75" y1="132.12" x2="59.25" y2="132.12" stroke-width="0.5"/>
+<line x1="66.75" y1="127.99" x2="59.25" y2="127.99" stroke-width="0.5"/>
+<line x1="66.75" y1="123.86" x2="59.25" y2="123.86" stroke-width="0.5"/>
+<line x1="66.75" y1="119.74" x2="47.25" y2="119.74" stroke-width="1.1"/>
+<line x1="66.75" y1="115.61" x2="59.25" y2="115.61" stroke-width="0.5"/>
+<line x1="66.75" y1="111.48" x2="59.25" y2="111.48" stroke-width="0.5"/>
+<line x1="66.75" y1="107.36" x2="59.25" y2="107.36" stroke-width="0.5"/>
+<line x1="66.75" y1="103.23" x2="59.25" y2="103.23" stroke-width="0.5"/>
+<line x1="66.75" y1="99.1" x2="53.25" y2="99.1" stroke-width="0.8"/>
+<line x1="66.75" y1="94.98" x2="59.25" y2="94.98" stroke-width="0.5"/>
+<line x1="66.75" y1="90.85" x2="59.25" y2="90.85" stroke-width="0.5"/>
+<line x1="66.75" y1="86.72" x2="59.25" y2="86.72" stroke-width="0.5"/>
+<line x1="66.75" y1="82.6" x2="59.25" y2="82.6" stroke-width="0.5"/>
+<line x1="66.75" y1="78.47" x2="47.25" y2="78.47" stroke-width="1.1"/>
+<line x1="66.75" y1="74.34" x2="59.25" y2="74.34" stroke-width="0.5"/>
+<line x1="66.75" y1="70.21" x2="59.25" y2="70.21" stroke-width="0.5"/>
+<line x1="66.75" y1="66.09" x2="59.25" y2="66.09" stroke-width="0.5"/>
+<line x1="66.75" y1="61.96" x2="59.25" y2="61.96" stroke-width="0.5"/>
+<line x1="66.75" y1="57.83" x2="53.25" y2="57.83" stroke-width="0.8"/>
+<line x1="66.75" y1="53.71" x2="59.25" y2="53.71" stroke-width="0.5"/>
+<line x1="66.75" y1="49.58" x2="59.25" y2="49.58" stroke-width="0.5"/>
+<line x1="66.75" y1="45.45" x2="59.25" y2="45.45" stroke-width="0.5"/>
+<line x1="66.75" y1="41.33" x2="59.25" y2="41.33" stroke-width="0.5"/>
+<line x1="66.75" y1="37.2" x2="47.25" y2="37.2" stroke-width="1.1"/>
+</g>
+<g font-size="12.75" fill="#3e4c59" text-anchor="end">
+<text x="41.25" y="371.85">-30</text>
+<text x="41.25" y="330.58">-20</text>
+<text x="41.25" y="289.31">-10</text>
+<text x="41.25" y="248.04">0</text>
+<text x="41.25" y="206.78">10</text>
+<text x="41.25" y="165.51">20</text>
+<text x="41.25" y="124.24">30</text>
+<text x="41.25" y="82.97">40</text>
+<text x="41.25" y="41.7">50</text>
+</g>
+</svg>
+<div class="answer-line"></div>
+</div>
+<div class="card">
+<p class="prompt">8. 读出温度计上的温度</p>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 465" width="150" height="465" role="img" aria-label="温度计">
+<title>温度计</title>
+<rect x="66.75" y="37.2" width="25.5" height="336.15" rx="12.75" fill="#f8fafc" stroke="#323f4b" stroke-width="1.8"/>
+<circle cx="79.5" cy="381.38" r="25.5" fill="#f8fafc" stroke="#323f4b" stroke-width="1.8"/>
+<circle cx="79.5" cy="381.38" r="18.36" fill="#d64545" stroke="#a61b1b"/>
+<rect x="71.85" y="313.7" width="15.3" height="59.65" rx="7.65" fill="#d64545"/>
+<g stroke="#52606d" stroke-linecap="round">
+<line x1="66.75" y1="367.35" x2="47.25" y2="367.35" stroke-width="1.1"/>
+<line x1="66.75" y1="363.22" x2="59.25" y2="363.22" stroke-width="0.5"/>
+<line x1="66.75" y1="359.1" x2="59.25" y2="359.1" stroke-width="0.5"/>
+<line x1="66.75" y1="354.97" x2="59.25" y2="354.97" stroke-width="0.5"/>
+<line x1="66.75" y1="350.84" x2="59.25" y2="350.84" stroke-width="0.5"/>
+<line x1="66.75" y1="346.72" x2="53.25" y2="346.72" stroke-width="0.8"/>
+<line x1="66.75" y1="342.59" x2="59.25" y2="342.59" stroke-width="0.5"/>
+<line x1="66.75" y1="338.46" x2="59.25" y2="338.46" stroke-width="0.5"/>
+<line x1="66.75" y1="334.34" x2="59.25" y2="334.34" stroke-width="0.5"/>
+<line x1="66.75" y1="330.21" x2="59.25" y2="330.21" stroke-width="0.5"/>
+<line x1="66.75" y1="326.08" x2="47.25" y2="326.08" stroke-width="1.1"/>
+<line x1="66.75" y1="321.95" x2="59.25" y2="321.95" stroke-width="0.5"/>
+<line x1="66.75" y1="317.83" x2="59.25" y2="317.83" stroke-width="0.5"/>
+<line x1="66.75" y1="313.7" x2="59.25" y2="313.7" stroke-width="0.5"/>
+<line x1="66.75" y1="309.57" x2="59.25" y2="309.57" stroke-width="0.5"/>
+<line x1="66.75" y1="305.45" x2="53.25" y2="305.45" stroke-width="0.8"/>
+<line x1="66.75" y1="301.32" x2="59.25" y2="301.32" stroke-width="0.5"/>
+<line x1="66.75" y1="297.19" x2="59.25" y2="297.19" stroke-width="0.5"/>
+<line x1="66.75" y1="293.07" x2="59.25" y2="293.07" stroke-width="0.5"/>
+<line x1="66.75" y1="288.94" x2="59.25" y2="288.94" stroke-width="0.5"/>
+<line x1="66.75" y1="284.81" x2="47.25" y2="284.81" stroke-width="1.1"/>
+<line x1="66.75" y1="280.69" x2="59.25" y2="280.69" stroke-width="0.5"/>
+<line x1="66.75" y1="276.56" x2="59.25" y2="276.56" stroke-width="0.5"/>
+<line x1="66.75" y1="272.43" x2="59.25" y2="272.43" stroke-width="0.5"/>
+<line x1="66.75" y1="268.31" x2="59.25" y2="268.31" stroke-width="0.5"/>
+<line x1="66.75" y1="264.18" x2="53.25" y2="264.18" stroke-width="0.8"/>
+<line x1="66.75" y1="260.05" x2="59.25" y2="260.05" stroke-width="0.5"/>
+<line x1="66.75" y1="255.92" x2="59.25" y2="255.92" stroke-width="0.5"/>
+<line x1="66.75" y1="251.8" x2="59.25" y2="251.8" stroke-width="0.5"/>
+<line x1="66.75" y1="247.67" x2="59.25" y2="247.67" stroke-width="0.5"/>
+<line x1="66.75" y1="243.54" x2="47.25" y2="243.54" stroke-width="1.1"/>
+<line x1="66.75" y1="239.42" x2="59.25" y2="239.42" stroke-width="0.5"/>
+<line x1="66.75" y1="235.29" x2="59.25" y2="235.29" stroke-width="0.5"/>
+<line x1="66.75" y1="231.16" x2="59.25" y2="231.16" stroke-width="0.5"/>
+<line x1="66.75" y1="227.04" x2="59.25" y2="227.04" stroke-width="0.5"/>
+<line x1="66.75" y1="222.91" x2="53.25" y2="222.91" stroke-width="0.8"/>
+<line x1="66.75" y1="218.78" x2="59.25" y2="218.78" stroke-width="0.5"/>
+<line x1="66.75" y1="214.66" x2="59.25" y2="214.66" stroke-width="0.5"/>
+<line x1="66.75" y1="210.53" x2="59.25" y2="210.53" stroke-width="0.5"/>
+<line x1="66.75" y1="206.4" x2="59.25" y2="206.4" stroke-width="0.5"/>
+<line x1="66.75" y1="202.28" x2="47.25" y2="202.28" stroke-width="1.1"/>
+<line x1="66.75" y1="198.15" x2="59.25" y2="198.15" stroke-width="0.5"/>
+<line x1="66.75" y1="194.02" x2="59.25" y2="194.02" stroke-width="0.5"/>
+<line x1="66.75" y1="189.89" x2="59.25" y2="189.89" stroke-width="0.5"/>
+<line x1="66.75" y1="185.77" x2="59.25" y2="185.77" stroke-width="0.5"/>
+<line x1="66.75" y1="181.64" x2="53.25" y2="181.64" stroke-width="0.8"/>
+<line x1="66.75" y1="177.51" x2="59.25" y2="177.51" stroke-width="0.5"/>
+<line x1="66.75" y1="173.39" x2="59.25" y2="173.39" stroke-width="0.5"/>
+<line x1="66.75" y1="169.26" x2="59.25" y2="169.26" stroke-width="0.5"/>
+<line x1="66.75" y1="165.13" x2="59.25" y2="165.13" stroke-width="0.5"/>
+<line x1="66.75" y1="161.01" x2="47.25" y2="161.01" stroke-width="1.1"/>
+<line x1="66.75" y1="156.88" x2="59.25" y2="156.88" stroke-width="0.5"/>
+<line x1="66.75" y1="152.75" x2="59.25" y2="152.75" stroke-width="0.5"/>
+<line x1="66.75" y1="148.63" x2="59.25" y2="148.63" stroke-width="0.5"/>
+<line x1="66.75" y1="144.5" x2="59.25" y2="144.5" stroke-width="0.5"/>
+<line x1="66.75" y1="140.37" x2="53.25" y2="140.37" stroke-width="0.8"/>
+<line x1="66.75" y1="136.25" x2="59.25" y2="136.25" stroke-width="0.5"/>
+<line x1="66.75" y1="132.12" x2="59.25" y2="132.12" stroke-width="0.5"/>
+<line x1="66.75" y1="127.99" x2="59.25" y2="127.99" stroke-width="0.5"/>
+<line x1="66.75" y1="123.86" x2="59.25" y2="123.86" stroke-width="0.5"/>
+<line x1="66.75" y1="119.74" x2="47.25" y2="119.74" stroke-width="1.1"/>
+<line x1="66.75" y1="115.61" x2="59.25" y2="115.61" stroke-width="0.5"/>
+<line x1="66.75" y1="111.48" x2="59.25" y2="111.48" stroke-width="0.5"/>
+<line x1="66.75" y1="107.36" x2="59.25" y2="107.36" stroke-width="0.5"/>
+<line x1="66.75" y1="103.23" x2="59.25" y2="103.23" stroke-width="0.5"/>
+<line x1="66.75" y1="99.1" x2="53.25" y2="99.1" stroke-width="0.8"/>
+<line x1="66.75" y1="94.98" x2="59.25" y2="94.98" stroke-width="0.5"/>
+<line x1="66.75" y1="90.85" x2="59.25" y2="90.85" stroke-width="0.5"/>
+<line x1="66.75" y1="86.72" x2="59.25" y2="86.72" stroke-width="0.5"/>
+<line x1="66.75" y1="82.6" x2="59.25" y2="82.6" stroke-width="0.5"/>
+<line x1="66.75" y1="78.47" x2="47.25" y2="78.47" stroke-width="1.1"/>
+<line x1="66.75" y1="74.34" x2="59.25" y2="74.34" stroke-width="0.5"/>
+<line x1="66.75" y1="70.21" x2="59.25" y2="70.21" stroke-width="0.5"/>
+<line x1="66.75" y1="66.09" x2="59.25" y2="66.09" stroke-width="0.5"/>
+<line x1="66.75" y1="61.96" x2="59.25" y2="61.96" stroke-width="0.5"/>
+<line x1="66.75" y1="57.83" x2="53.25" y2="57.83" stroke-width="0.8"/>
+<line x1="66.75" y1="53.71" x2="59.25" y2="53.71" stroke-width="0.5"/>
+<line x1="66.75" y1="49.58" x2="59.25" y2="49.58" stroke-width="0.5"/>
+<line x1="66.75" y1="45.45" x2="59.25" y2="45.45" stroke-width="0.5"/>
+<line x1="66.75" y1="41.33" x2="59.25" y2="41.33" stroke-width="0.5"/>
+<line x1="66.75" y1="37.2" x2="47.25" y2="37.2" stroke-width="1.1"/>
+</g>
+<g font-size="12.75" fill="#3e4c59" text-anchor="end">
+<text x="41.25" y="371.85">-30</text>
+<text x="41.25" y="330.58">-20</text>
+<text x="41.25" y="289.31">-10</text>
+<text x="41.25" y="248.04">0</text>
+<text x="41.25" y="206.78">10</text>
+<text x="41.25" y="165.51">20</text>
+<text x="41.25" y="124.24">30</text>
+<text x="41.25" y="82.97">40</text>
+<text x="41.25" y="41.7">50</text>
+</g>
+</svg>
+<div class="answer-line"></div>
+</div>
+</section>
+<section class="answers"><h2>参考答案</h2><table><thead><tr><th>题号</th><th>题目</th><th>答案</th></tr></thead><tbody><tr><td>1</td><td>温度从 40°C 变到 -11°C，变化了多少？</td><td>下降 51°C</td></tr>
+<tr><td>2</td><td>温度从 21°C 变到 -17°C，变化了多少？</td><td>下降 38°C</td></tr>
+<tr><td>3</td><td>读出温度计上的温度</td><td>0°C（零度）</td></tr>
+<tr><td>4</td><td>读出温度计上的温度</td><td>-11°C（零下）</td></tr>
+<tr><td>5</td><td>温度从 17°C 变到 -17°C，变化了多少？</td><td>下降 34°C</td></tr>
+<tr><td>6</td><td>读出温度计上的温度</td><td>5°C（零上）</td></tr>
+<tr><td>7</td><td>读出温度计上的温度</td><td>21°C（零上）</td></tr>
+<tr><td>8</td><td>读出温度计上的温度</td><td>-17°C（零下）</td></tr></tbody></table></section>
+</main></body></html>
